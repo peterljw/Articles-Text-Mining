@@ -38,6 +38,7 @@ for i, comp in enumerate(lsa.components_):
       for term in sortedTerms:
             print(term[0])
       print("\n")
+
 labels = ['word', 'score']
 for article, out in zip(txt_files, output):
       df = pd.DataFrame.from_records(out, columns=labels)
